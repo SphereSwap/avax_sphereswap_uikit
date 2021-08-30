@@ -9,7 +9,12 @@ interface Props extends PanelProps, PushedProps {
   showMenu: boolean;
   isMobile: boolean;
 }
-
+const RugDoc = styled.a<{ target: string; rel: string; href: string }>`
+  margin: 2%;
+`;
+const AssureKyc = styled.a<{ target: string; rel: string; href: string }>`
+  margin: 2%;
+`;
 const StyledPanel = styled.div<{ isPushed: boolean; showMenu: boolean }>`
   position: fixed;
   padding-top: ${({ showMenu }) => (showMenu ? "80px" : 0)};
@@ -39,6 +44,12 @@ const Panel: React.FC<Props> = (props) => {
   return (
     <StyledPanel isPushed={isPushed} showMenu={showMenu}>
       <PanelBody {...props} />
+      <AssureKyc target="_blank" rel="noreferrer" href="https://www.assuredefi.io/projects/polyvertex/">
+        <img src="/egg/rugdoc.png" />
+      </AssureKyc>
+      <RugDoc target="_blank" rel="noreferrer" href="https://rugdoc.io/project/sphereswap/">
+        <img src="/egg/rugdoc.png" />
+      </RugDoc>
       <PanelFooter {...props} />
     </StyledPanel>
   );

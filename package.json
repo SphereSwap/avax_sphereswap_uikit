@@ -1,6 +1,6 @@
 {
   "name": "@pancakeswap-libs/uikit",
-  "version": "0.30.0",
+  "version": "0.29.0",
   "description": "Set of UI components for sphere projects",
   "main": "dist/index.cjs.js",
   "module": "dist/index.esm.js",
@@ -9,7 +9,7 @@
   "files": [
     "dist"
   ],
-  "repository": "https://github.com/SphereSwap/matic_sphereswap_uikit.git",
+  "repository": "https://github.com/SphereSwap/avax_sphereswap_uikit.git",
   "license": "MIT",
   "scripts": {
     "build": "rollup -c && tsc -d --emitDeclarationOnly --declarationDir dist",
